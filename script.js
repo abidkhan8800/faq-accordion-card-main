@@ -13,6 +13,10 @@ for(let i = 0; i <ques.length;i++){
             for(let ans of answers){
                 ans.style.display = "none";
             }
+            for(let q of ques){
+                q.classList.remove('bold')
+                q.children[1].classList.remove("rotate-180");
+            }
             answer.style.display = "block";
             this.classList.add("bold");
             this.children[1].classList.add("rotate-180");
