@@ -1,0 +1,117 @@
+:root {
+    --main-background-color-1: hsl(273, 75%, 66%);
+    --main-background-color-2: hsl(240, 73%, 65%);
+    --main-font-color-1: hsl(238, 29%, 16%);
+    --main-font-color-2: hsl(14, 88%, 65%);
+
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(var(--main-background-color-1),var( --main-background-color-2));
+    font-family: 'Kumbh Sans';
+}
+
+.container{
+    display:flex;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    width: 900px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.background-image{
+    position: relative;
+    width: 900px;
+    height: 1200px;
+    background: url(./images/bg-pattern-desktop.svg);
+    background-size: contain;
+    right: 520px;
+    bottom: 250px;
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+
+
+.desktop-image{
+    position: relative;
+    background: url(./images/illustration-woman-online-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 470px;
+    height: 450px;
+    bottom: 1140px;
+    right: 80px;
+    z-index: 2;
+}
+.box-image {
+    position: fixed;
+    background: url(./images/illustration-box-desktop.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    z-index: 2;
+}
+
+.content-container{
+    position: absolute;
+    left: 480px;
+    padding: 4em 6em 0 0;
+    font-family: 'Kumbh Sans';
+    font-size: 16px;
+
+}
+
+.question-container{
+    padding: 1em 0;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+    width: 320px;
+}
+
+.faq-header {
+    font-size: 2.5em;
+    font-weight: 700px;
+    margin-bottom: 0.8em;
+}
+
+.question {
+    color: hsl(240, 6%, 50%);
+    display: flex;
+    justify-content: space-between;
+}
+.question:first-child:hover {
+    color: hsl(14, 88%, 65%);
+    cursor: pointer;
+}
+
+
+
+.rotate-180 {
+    rotate: 180deg;
+}
+
+.bold{
+    color:hsl(237, 12%, 33%);
+    font-weight: 700px;
+}
+
+.answer {
+    display: none;
+    font-size: 14px;
+    color: hsl(240, 6%, 50%);
+    padding-top: 12px;
+    width: 300px;
+    transition: ease-in-out 4s;
+}
+
